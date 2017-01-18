@@ -1,3 +1,4 @@
+
 # SE17-Project
 Class project for Software Engineering Spring 2017
 
@@ -5,6 +6,8 @@ SnippetFinder for Dummies- A search engine meant specifically for new learner to
 
 or
 
-How do we increase efficiency for working across multiple computers? 
-1. Create bookmarking system that works across all web browsers and computers. 
+How do we increase efficiency for working across multiple computers?
+
+1. Create bookmarking system that works across all web browsers and computers.
+
 2. Save state of all tabs on a web browser that can be opened back up on a different computer. 
