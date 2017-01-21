@@ -24,7 +24,8 @@
   Description: This is somehow the same idea of the Sentiment analysis for product rating 
                but this time to extract the positive and negative experiance of the costumers about the service provider.
   
-  
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 - Detecting the traffic light is green or red.
 Using OpenCV ibrary to make a mchine learning model to detect that the traffic light is green or red.
 
