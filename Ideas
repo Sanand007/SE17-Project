@@ -1,0 +1,19 @@
+1/21/2017 Ideas:
+
+- Topic: Fake review detection
+  Description: When you want to buy something online what is the main criteria that helps you toward making a decision to buy the product?
+               Probably your answer is 'the reviews from previous customers'. 
+               There is a lot of fake reviews on the internet which has been uploaded even from the manufacturer!
+               So, to help the customer, there should be some way to exclude the fake reviews and purify the reviews. 
+               
+- Topic: Sentiment Analysis for Product Rating 
+  Description: Costumers not only give from 1 to 5 stars to a product but also they write their views. 
+               It is not quite fissible for a potential costumer to sit and read all the written reviews. 
+               So, it would be beneficial if we can extract the key features of the product (pros and cons) from its previous costumers point of view and 
+               show them to the potential costumer.
+               
+- Topic: Rating service providers from the costumers written reviews
+  Description: This is somehow the same idea of the Sentiment analysis for product rating 
+               but this time to extract the positive and negative experiance of the costumers about the service provider.
+               
+- 
