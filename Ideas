@@ -40,32 +40,20 @@ http://www.murase.m.is.nagoya-u.ac.jp/~murase//pdf/249-pdf.pdf
 
 Handwriting Recognition System- Train a machine learning algorithm to convert any handwritten text into computerized text.
 
-
 Users
-
 Students- To convert any handwritten notes and use it for reading or storing. (Text takes much less space than scanned images)
-
 TA/Prof- Assist in garding handwritten papers of student.
-
-
 
 Dataset for training the algorithm- 
 MNIST Dataset- url-http://yann.lecun.com/exdb/mnist/
-
 Extracting images from the dataset- http://ufldl.stanford.edu/wiki/index.php/Using_the_MNIST_Dataset
-
-
 OpenCV tutorial for handwriting detection- http://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_ml/py_knn/py_knn_opencv/py_knn_opencv.html
 
-
 Reference papers- 
-
 1. http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=6830974
-
 2. L. Bottou, C. Cortes, J.S. Denker, H. Drucker, I. Guyon, L.D. Jackel, Y. LeCun, U.A. Muller, E. Sackinger, P. Simard and V. Vapnik: 
 Comparison of classifier methods: a case study in handwritten digit recognition, in IAPR (Eds), 
 Proc. of the International Conference on Pattern Recognition, II:77-82, IEEE, Jerusalem, October 1994
-
 3. http://ieeexplore.ieee.org/abstract/document/7478642/
 
 
@@ -75,38 +63,25 @@ Analyse the reviews at rate my professor, grade distribution in mypack and the c
 User-
 Students at NCState
 
-
 Book Recommendation System
 Analyse the data at goodreads to suggest books for a subject or area.
-
 users-
 Any book enthusiast
-
 Reading for analysing the data on goodreads or any other site-
 https://scholar.google.com/scholar?q=analysing+social+media&btnG=&hl=en&as_sdt=0%2C34&as_ylo=2013&oq=analysing+social+
-
-
 
 Virtual Reality Exposure Therapy
 : Use virtual reality headsets to help people overcome fears. 
 Research Papers:
-
 http://ajp.psychiatryonline.org/doi/abs/10.1176/appi.ajp.2014.13121625
-
 http://www.sciencedirect.com/science/article/pii/S0887618514000723
-
 http://onlinelibrary.wiley.com/doi/10.1002/jclp.22051/full
-
 http://www.sciencedirect.com/science/article/pii/S0005796715300334
-
 Advantages:
 +Could find three different ways to implement pretty easily
-
 Disadvantages:
 -Might need background in psychology for effective implementation
 -Need to learn how to program with the virtual reality headsets 
 
-
 Smart Grid Technology: Lots going on in this field, still trying to pinpoint something we could work on for a project.
-
 https://scholar.google.com/scholar?q=smart+grid+applications&btnG=&hl=en&as_sdt=0%2C34&as_ylo=2014&as_yhi=2017
