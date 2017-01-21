@@ -6,6 +6,9 @@
                There is a lot of fake reviews on the internet which has been uploaded even from the manufacturer!
                So, to help the customer, there should be some way to exclude the fake reviews and purify the reviews. 
   Dataset: The Yelp review dataset
+  Seed paper: Michael Luca, Georgios Zervas (2016) Fake It Till You Make It: Reputation, Competition, and Yelp Review Fraud. Management
+              Science 62(12):3412-3427. http://dx.doi.org/10.1287/mnsc.2015.2304
+
   
   
                
