@@ -1,3 +1,20 @@
 https://consumerist.com/2010/04/14/how-you-spot-fake-online-reviews/
 http://www.techlicious.com/tip/how-to-tell-if-a-review-is-fake/
 http://www.news.cornell.edu/stories/2011/07/cornell-computers-spot-opinion-spam-online-reviews
+
+http://www2.cs.uh.edu/~arjun/papers/UIC-CS-TR-yelp-spam.pdf
+Fake Review Detection: Classification and Analysis of Real 
+and Pseudo Reviews 
+
+https://www.cs.uic.edu/~liub/FBS/fake-reviews.html#reviews
+Fake Review Detection
+We have used supervised learning, pattern discovery, graph-based methods, and relational modeling to solve the problem. Below are some main signals that we have used:
+1. Review content:
+    1. Lexical features such as word n-grams, part-of-speech n-grams, and other lexical attributes.
+    2. Content and style similarity of reviews from different reviewers.
+    3. Semantic inconsistency (we have never used this kind of features). For example, a reviewer wrote "My wife and I bought this car ..." in one review and then in another review he/she wrote "My husband really love ..." (I heard this example from a friend in a company which actively detects fake reviews).
+2. Reviewer abnormal behaviors:
+    1. Public data available from Web sites, e.g., reviewer id, time of posting, frequency of posting, first reviewers of products, and many more. For example, do you see anything wrong with the reviews from this user, Big John? What about after you see the reviews of these two users, Cletus and Jake? In fact, if you browse the reviews of their reviewed products, you will find another suspicious user/reviewer. This is just one example of atypical behaviors that our algorithms are able to discover.
+    2. Web site private/internal data (we have not used such data, but they are extremely useful), e.g., IP and MAC addresses, time taking to post a review, physical location of the reviewer, etc (a lot of them).
+3. Product related features: E.g., product decription, sales volume, and sales rank
+4. Relationships: Complex relationships among reviewers, reviews, and entities (e.g., products and stores).
