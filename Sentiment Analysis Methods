@@ -1,0 +1,20 @@
+Standford Sentiment Analysis
+http://nlp.stanford.edu:8080/sentiment/rntnDemo.html
+"not bad"- neutral
+"it can't be good"- negative
+
+Python NLTK
+"not bad"- neg
+it can't be good- neg
+
+iFeel-
+Asked authors to provide code since site under maintanence.
+
+Sentiment Web
+Can detect double negative, "not bad" is positive
+it can't be good- neutral
+
+Final Tool for creating the application
+Flask using pyhton
+find the tutorial below
+http://pythonhow.com/building-a-website-with-python-flask
