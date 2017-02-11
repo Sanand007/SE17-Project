@@ -4,13 +4,16 @@ http://nlp.stanford.edu:8080/sentiment/rntnDemo.html
 "it can't be good"- negative
 
 Python NLTK
+http://text-processing.com/demo/sentiment/
 "not bad"- neg
 it can't be good- neg
 
 iFeel-
+http://blackbird.dcc.ufmg.br:1210/
 Asked authors to provide code since site under maintanence.
 
 Sentiment Web
+http://sentiment.vivekn.com/
 Can detect double negative, "not bad" is positive
 it can't be good- neutral
 
