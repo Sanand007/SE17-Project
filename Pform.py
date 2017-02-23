@@ -19,7 +19,7 @@ class ReusableForm(Form):
  
 @app.route("/", methods=['GET', 'POST'])
 def hello():
-    f = open("amazon_data.txt")
+    f = open("Training_amazon_data.txt")
     pos_tweets = list()
     neg_tweets = list()
     for line in f:
@@ -56,21 +56,28 @@ def hello():
         return features
 
     training_set = nltk.classify.apply_features(extract_features, tweets)
-    classifie = nltk.NaiveBayesClassifier.train(training_set)
+    #classifie = nltk.NaiveBayesClassifier.train(training_set)
     
-    #classifier = SklearnClassifier(BernoulliNB()).train(training_set)
+    classifie = SklearnClassifier(BernoulliNB()).train(training_set)
     
     form = ReusableForm(request.form)
     print (form.errors)
     
     if request.method == 'POST':
         name=request.form['name']
-        review = classifie.classify(extract_features(name.split()))
+        file = open("test.txt")
+        resfile = open("result.txt", "w")
+        for line in file:
+            review = classifie.classify(extract_features(line.split()))
+            resfile.write(line)
+            resfile.write(review)
+        file.close()
+        resfile.close()
         #if (classifie.classify(extract_features(name.split())) == '1'):
         #    review = 'Positive'
        # else:
         #    review = 'Negative'
-        name = review
+        name = classifie.classify(extract_features(name.split()))
         print (name)
  
         if form.validate():
