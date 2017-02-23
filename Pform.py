@@ -5,6 +5,7 @@ import nltk
 from nltk.classify import SklearnClassifier
 from sklearn.naive_bayes import BernoulliNB
 from sklearn.svm import SVC
+import webbrowser
 
 # App config.
 DEBUG = True
@@ -64,11 +65,11 @@ def hello():
     
     if request.method == 'POST':
         name=request.form['name']
-        review = 'None'
-        if (classifie.classify(extract_features(name.split())) == 1):
-            review = 'Positive'
-        else:
-            review = 'Negative'
+        review = classifie.classify(extract_features(name.split()))
+        #if (classifie.classify(extract_features(name.split())) == '1'):
+        #    review = 'Positive'
+       # else:
+        #    review = 'Negative'
         name = review
         print (name)
  
@@ -81,4 +82,6 @@ def hello():
     return render_template('analysis.html', form=form)
  
 if __name__ == "__main__":
+    url = 'http://127.0.0.1:5000'
+    webbrowser.open_new(url)
     app.run()
