@@ -81,7 +81,7 @@ def hello():
             resfile.write(line)
             resfile.write(label)
         file.close()
-        resfile.close()
+        
         confusion = actual - predicted
         FP = numpy.count_nonzero(confusion==-1)
         FN = numpy.count_nonzero(confusion==1)
@@ -90,6 +90,8 @@ def hello():
         
         Accuracy = numpy.count_nonzero(confusion==0)/(numpy.count_nonzero(confusion==0) + FP+ FN)
         print (Accuracy)
+        resfile.write(Accuracy)
+        resfile.close()
         #if 
         #TP = 
         #TN
