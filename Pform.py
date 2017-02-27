@@ -2,6 +2,7 @@ from flask import Flask, render_template, flash, request
 from wtforms import Form, TextField, TextAreaField, validators, StringField, SubmitField
  
 import nltk
+import numpy
 from nltk.classify import SklearnClassifier
 from sklearn.naive_bayes import BernoulliNB
 from sklearn.svm import SVC
@@ -65,19 +66,33 @@ def hello():
     
     if request.method == 'POST':
         name=request.form['name']
-        file = open("test.txt")
+        file = open("Training_amazon_data.txt") 
         resfile = open("result.txt", "w")
+        predicted = numpy.array([]);
+        actual = numpy.array([]);
+        index = 0
         for line in file:
             review = classifie.classify(extract_features(line.split()))
-            resfile.write(line)
+            words = line.split("\t")
+            actual = numpy.insert(actual, index, int(words[1]))
+            predicted = numpy.insert(predicted, index, int(review))
+            review+=words[1]
             resfile.write(review)
+            #resfile.write(review) 
         file.close()
+        confusion = actual - predicted
+        FP = numpy.count_nonzero(confusion==-1)
+        FN = numpy.count_nonzero(confusion==1)
+        Accuracy = numpy.count_nonzero(confusion==0)/(numpy.count_nonzero(confusion==0) + FP+ FN)
+        print (Accuracy)
+        resfile.write(str(Accuracy))
         resfile.close()
         #if (classifie.classify(extract_features(name.split())) == '1'):
         #    review = 'Positive'
        # else:
         #    review = 'Negative'
-        name = classifie.classify(extract_features(name.split()))
+        name = classifie.classify(extract_features(name.split())) 
+       # name = str(predicted.size)
         print (name)
  
         if form.validate():
@@ -86,7 +101,7 @@ def hello():
         else:
             flash('Error: All the form fields are required. ')
  
-    return render_template('analysis.html', form=form)
+    return render_template('analysis1.html', form=form)
  
 if __name__ == "__main__":
     url = 'http://127.0.0.1:5000'
