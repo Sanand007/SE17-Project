@@ -57,28 +57,29 @@ def hello():
         return features
 
     training_set = nltk.classify.apply_features(extract_features, tweets)
-    #classifie = nltk.NaiveBayesClassifier.train(training_set)
+    classifie = nltk.NaiveBayesClassifier.train(training_set)
     
-    classifie = SklearnClassifier(BernoulliNB()).train(training_set)
+   # classifie = SklearnClassifier(BernoulliNB()).train(training_set)
     
     form = ReusableForm(request.form)
     print (form.errors)
     
     if request.method == 'POST':
         name=request.form['name']
-        file = open("Training_amazon_data.txt") 
-        resfile = open("result.txt", "w")
+        file = open("Testing_amazon_data.txt") 
+        resfile = open("result_naive_bayes.txt", "w")
         predicted = numpy.array([]);
         actual = numpy.array([]);
         index = 0
         for line in file:
             review = classifie.classify(extract_features(line.split()))
             words = line.split("\t")
-            actual = numpy.insert(actual, index, int(words[1]))
-            predicted = numpy.insert(predicted, index, int(review))
-            review+=words[1]
-            resfile.write(review)
-            #resfile.write(review) 
+            if len(words) >1 :
+                actual = numpy.insert(actual, index, int(words[1])) 
+                predicted = numpy.insert(predicted, index, int(review))
+            #review+=words[1]
+            resfile.write(line)
+            resfile.write(review) 
         file.close()
         confusion = actual - predicted
         FP = numpy.count_nonzero(confusion==-1)
