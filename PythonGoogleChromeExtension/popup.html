@@ -1,16 +1,25 @@
+
+<!DOCTYPE html>
 <html>
 <head>
-<script src="/brython.js"></script>
+<meta name="description" content="Hello world demo written in Brython www.brython.info">
+<meta name="keywords" content="Python,Brython">
+<meta name="author" content="Pierre Quentel">
+<meta charset="iso-8859-1">
+<script src="http://www.brython.info/src/brython.js"></script>
 </head>
+
 <body onload="brython()">
 <script type="text/python">
-from browser import document, alert
+from browser import document as doc
+from browser import alert
 
-def echo(ev):
-    alert(document["zone"].value)
+def echo(*args):
+    alert("Hello %s !" %doc["zone"].value)
 
-document['mybutton'].bind('click',echo)
+doc["test"].bind("click", echo)
 </script>
-<input id="zone"><button id="mybutton">click !</button>
+<p>Your name is : <input id="zone"><button id="test">clic !</button>
 </body>
+
 </html>
