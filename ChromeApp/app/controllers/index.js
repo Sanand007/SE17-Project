@@ -84,7 +84,7 @@ app.controller('fileCtrl', function($scope, $http) {
             var stars = ((5 - 0) / (1 - (-1))) * (stuff.docSentiment.score - 1) + 5
             document.getElementById("Score").textContent = stuff.docSentiment.score;
             document.getElementById("sentiment").textContent = stuff.docSentiment.type;
-            document.getElementById("stars").textContent = stars;
+            document.getElementById("stars").textContent = stars.toFixed(1);
             console.log($scope.result);
         }).catch(function(error, res) {
             console.log("Error:", error, res);
