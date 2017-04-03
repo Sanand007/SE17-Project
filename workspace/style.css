@@ -1,0 +1,62 @@
+html {
+  background: #2c3e50;
+}
+
+body {
+  font: 300 16px Helvetica, Arial, sans-serif;
+ 
+  color: white;
+  margin-left: 7px;
+  margin-right: 5px;
+}
+
+label {
+  color: #648888;
+}
+
+input,
+select,
+textarea {
+  border: 1px solid ;
+  border-radius: 5px;
+  display: block;
+  margin: 5px 0 27px 0;
+  padding: 5px 8px;
+  width: 95%;
+}
+#review
+{
+  height:150px;
+  font-size:10pt
+} 
+div {
+    font: 300 16px Helvetica, Arial, sans-serif;
+    width: 500px;
+}
+
+a {
+  width: 50%;
+  text-decoration: none;
+}
+
+a:link {
+    color: #648888;
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover, a:active {
+    color: #1789D4;
+}
+
+
+#alchemy {
+  font: 10px Helvetica, Arial, sans-serif;
+}
+
+
+#sourceURL {
+    font-weight: normal;
+}

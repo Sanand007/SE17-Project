@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+
+<html ng-app="reviewApp">
+    
+    <head>
+        
+        <!-- Bootstrap -->
+        <!--link rel="stylesheet" href="/css/bootstrap.min.css"/-->
+        <!--<link rel="stylesheet" href="/css/style.css">-->
+        <link rel="stylesheet" href="style.css">
+        <!-- AngularJS -->
+        <script src="/js/jquery.js"></script>
+        <script src="/js/bootstrap.js"></script>
+        <script src="/js/angular.min.js"></script>
+        <script src="/app/controllers/index.js"></script>
+        <script src="/js/ui-bootstrap-tpls.js"></script>
+
+        
+    </head>
+   
+    <body ng-controller="reviewCtrl">
+        
+        <div class="container">
+            <h2>{{analysis}}</h2>
+            
+            <form ng-submit='submitForm()'>
+            <div class="form-group">
+                <label for="name">Enter a review here:</label>
+                <textarea class="form-control" id="review" name="name" placeholder="" ng-model = "data.review"></textarea>
+            </div>
+
+                <button type="submit" id="Sentiment" class="btn btn-success">Submit for Analysis</button>
+            </form>
+
+	        <div ng-controller="fileCtrl" class="container">
+	            <form ng-submit='submitUrl()'>
+	            <div class="form-group">
+	                <br>
+	                <label for="name">Enter Amazon Product URL Here:</label>
+	                <input type="text" class="form-control" id="reviews" name="name" placeholder="" ng-model="data.url">
+	            </div>
+
+	            <button type="submit" id="Sentiment" class="btn btn-success">Submit for Analysis</button>
+	            </form>
+	              
+
+	        </div>
+            <div id="js-legend" class="chart-legend"></div>
+              <br>
+              Score: 
+              <span id="Score"></span><br>
+              Sentiment:
+              <span id="sentiment"></span><br>
+              <br>
+	          Stars: 
+              <span id="stars"></span><br>
+              <br>
+              <footer><a role="button" id="alchemy" href="https://www.alchemyapi.com" target="_blank">Text Analysis by AlchemyAPI</a></footer>
+            </div>
+
+        </div>
+
+
+
+        
+    </body>
+    
+</html>
