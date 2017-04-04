@@ -4,7 +4,7 @@ html {
 }
 
 button {
-    background-color: #00008B; /* black */
+    background-color: #383838; /* black */
     border: none;
     color: white;
     padding: 10px 20px;
@@ -17,7 +17,7 @@ button {
 
 button:hover {
     background-color: white; /* Green */
-    color: black;
+    color: 383838;
 	border: 2px solid black;
 	padding: 8px 18px;
     text-align: center;
@@ -28,20 +28,19 @@ button:hover {
 }
 
 
-
 body {
   font: bold 12px Georgia, serif; 
-  color: #00008B;
+  color: #383838;
   margin-left: 5px;
   margin-right: 5px;  
-  background-image: url("blue.jpg");
-    background-color: #cccccc;
+  background-image: url("blue1.jpg");
+    
 }
 
 label {
 	
 	font: bold 18px Georgia, serif;
-	color: #00008B;
+	color: #383838;
 }
 
 input,
@@ -60,8 +59,10 @@ textarea {
   
 } 
 div {
+	
+	
     font: bold 15px Georgia, serif;
-	color: #00008B;
+	color: #383838;
     width: 500px;
 	
 	
