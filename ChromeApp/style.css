@@ -1,17 +1,47 @@
 html {
-  background: #435fef;
+  background: black;
+  
 }
 
+button {
+    background-color: #00008B; /* black */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+	border-radius: 12px;
+}
+
+button:hover {
+    background-color: white; /* Green */
+    color: black;
+	border: 2px solid black;
+	padding: 8px 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+	border-radius: 12px;
+}
+
+
+
 body {
-  font: 300 16px Helvetica, Arial, sans-serif;
- 
-  color: white;
-  margin-left: 7px;
-  margin-right: 5px;
+  font: bold 12px Georgia, serif; 
+  color: #00008B;
+  margin-left: 5px;
+  margin-right: 5px;  
+  background-image: url("blue.jpg");
+    background-color: #cccccc;
 }
 
 label {
-  color: #648888;
+	
+	font: bold 18px Georgia, serif;
+	color: #00008B;
 }
 
 input,
@@ -21,17 +51,21 @@ textarea {
   border-radius: 5px;
   display: block;
   margin: 5px 0 27px 0;
-  padding: 5px 8px;
+  padding: 5px 5px;
   width: 95%;
 }
 #review
 {
   height:150px;
-  font-size:10pt
+  
 } 
 div {
-    font: 300 16px Helvetica, Arial, sans-serif;
+    font: bold 15px Georgia, serif;
+	color: #00008B;
     width: 500px;
+	
+	
+	
 }
 
 a {
