@@ -1,0 +1,109 @@
+html {
+  background: transparent;
+  border-style: outset;
+  border: 3px solid ;
+
+  
+}
+
+button {
+    background-color: #383838; /* black */ 
+		
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+	border-radius: 12px;
+}
+
+button:hover {
+    background-color: white;
+	
+    color: #383838;
+	border: 2px solid black;
+	padding: 8px 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+	border-radius: 12px;
+}
+
+
+body {
+  font: bold 12px Georgia, serif; 
+  
+  color: #383838;
+  margin-left: 5px;
+  margin-right: 5px;  
+  background-image: url("new.png");
+    
+}
+
+
+label {
+	
+	font: bold 18px Georgia, serif;
+	color: #383838;
+	
+
+}
+
+input,
+select,
+textarea {
+  border: 3px solid ;
+  border-radius: 5px;
+  border-style: inset;
+  display: block;
+  margin: 5px 0 27px 0;
+  padding: 5px 5px;
+  width: 95%;
+}
+#review
+{
+  height:50px;
+  overflow: auto;
+  
+} 
+div {
+	
+	
+    font: bold 15px Georgia, serif;
+	color: #383838;
+    width: 500px;
+	
+	
+	
+	
+	
+}
+
+a {
+  width: 50%;
+  text-decoration: none;
+}
+
+a:link {
+    color: #648888;
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover, a:active {
+    color: #1789D4;
+}
+
+
+#alchemy {
+  font: 10px Helvetica, Arial, sans-serif;
+}
+
+
+#sourceURL {
+    font-weight: normal;
+}
